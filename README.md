@@ -1,6 +1,6 @@
-# 🚀 Live Deployment
+# Live Deployment
 
-👉 **[https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/](https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/)**
+ **[https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/](https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/)**
 
 ---
 
@@ -12,7 +12,7 @@ This project demonstrates how **LLM-based agents**, **deterministic governance**
 
 ---
 
-## 🔍 Problem Statement
+##  Problem Statement
 
 Modern marketing platforms must:
 
@@ -26,7 +26,7 @@ This project solves that by combining **agentic AI reasoning** with **strict gov
 
 ---
 
-## 🧠 Solution Overview
+##  Solution Overview
 
 The system uses **multiple specialized AI agents**, each responsible for a single decision:
 
@@ -49,7 +49,7 @@ All decisions are **explainable**, **auditable**, and **enterprise-safe**.
 
 ---
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 Customer Data
@@ -69,7 +69,7 @@ LLMs provide **reasoning**, while governance provides **control**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 unica-agentic-ai/
@@ -103,7 +103,7 @@ unica-agentic-ai/
 
 ---
 
-## ⚙️ Tech Stack
+##  Tech Stack
 
 * **Python**
 * **Streamlit** – UI & deployment
@@ -116,7 +116,7 @@ unica-agentic-ai/
 
 ---
 
-## 🔐 Governance Logic (Key Feature)
+##  Governance Logic (Key Feature)
 
 The system **never executes a campaign** if:
 
@@ -139,7 +139,7 @@ This mirrors real-world **HCL Unica compliance enforcement**.
 
 ---
 
-## ▶️ How to Run Locally
+##  How to Run Locally
 
 ```bash
 git clone https://github.com/Sachin432/unica-agentic-ai
@@ -152,17 +152,17 @@ streamlit run app.py
 
 ---
 
-## ☁️ Deployment
+##  Deployment
 
 Deployed on **Streamlit Cloud**
 Secrets managed via `secrets.toml` (Groq, HuggingFace, LangSmith keys)
 
 Live App:
-👉 **[https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/](https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/)**
+ **[https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/](https://unica-agentic-ai-qwrmgxjwftdppp85gvld45.streamlit.app/)**
 
 ---
 
-## 🎯 Key Highlights (Interview-Ready)
+##  Key Highlights (Interview-Ready)
 
 * True **agentic AI architecture**
 * Separation of reasoning vs execution
@@ -173,7 +173,7 @@ Live App:
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 * Reinforcement Learning for campaign optimization
 * Real Unica API integration
