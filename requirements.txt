@@ -1,0 +1,9 @@
+langchain==0.0.352
+langchain-groq
+langsmith
+streamlit
+pandas
+numpy
+python-dotenv
+faiss-cpu
+requests
