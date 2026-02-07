@@ -1,3 +1,11 @@
 customer_id,segment,age,location,email,opt_out,fatigue_score,open_rate,click_rate
-C001,High-Value,32,India,sachinkumarbgs599@gmail.com,false,0.20,0.75,0.35
-C002,Medium-Value,28,India,sachinkumarbgs599@gmail.com,false,0.40,0.60,0.25
+C001,High-Value,32,India,sachinkumarbgscs72@gmail.com,false,0.20,0.75,0.35
+C002,Medium-Value,28,India,sachinkumarbgs402@gmail.com,false,0.40,0.60,0.25
+C003,Low-Value,45,India,sachinkumarbgscs72@gmail.com,true,0.80,0.30,0.10
+C004,High-Value,38,India,sachinkumarbgs402@gmail.com,false,0.15,0.82,0.42
+C005,Medium-Value,26,India,sachinkumarbgscs72@gmail.com,false,0.35,0.58,0.22
+C006,Low-Value,50,India,sachinkumarbgs402@gmail.com,true,0.90,0.20,0.05
+C007,High-Value,41,India,sachinkumarbgscs72@gmail.com,false,0.25,0.68,0.31
+C008,Medium-Value,34,India,sachinkumarbgs402@gmail.com,false,0.45,0.55,0.24
+C009,Low-Value,29,India,sachinkumarbgscs72@gmail.com,false,0.60,0.48,0.18
+C010,High-Value,36,India,sachinkumarbgs402@gmail.com,false,0.22,0.72,0.33
