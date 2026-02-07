@@ -33,6 +33,7 @@ if df.empty:
     st.warning("Customer dataset is empty.")
     st.stop()
 
+# Pick a random customer
 customer = df.sample(1).to_dict(orient="records")[0]
 
 # -----------------------------
@@ -56,10 +57,12 @@ if st.button("Run Autonomous Campaign Decision"):
     # -----------------------------
     if result.get("approved"):
         response = trigger_campaign(
-            customer_id=customer.get("customer_id"),
-            strategy=result.get("strategy"),
-            channel=result.get("channel")
+            customer["customer_id"],
+            result["strategy"],
+            result["channel"],
+            customer.get("email")
         )
+
         st.success("Campaign Executed Successfully")
         st.json(response)
     else:
