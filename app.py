@@ -49,22 +49,37 @@ if st.button("Run Autonomous Campaign Decision"):
     with st.spinner("Running agentic decision pipeline..."):
         result = run_orchestration(llm, customer)
 
-    st.subheader("Agent Reasoning")
+    # -----------------------------
+    # Show Agent Decisions
+    # -----------------------------
+    st.subheader("Agent Decisions & Reasoning")
     st.json(result)
+
+    st.markdown("### Final Decision Summary")
+    col1, col2, col3 = st.columns(3)
+    col1.metric("Strategy", result.get("strategy", "N/A"))
+    col2.metric("Channel", result.get("channel", "N/A"))
+    col3.metric("Send Time", result.get("send_time", "N/A"))
 
     # -----------------------------
     # Campaign Execution
     # -----------------------------
     if result.get("approved"):
-        response = trigger_campaign(
-            customer["customer_id"],
-            result["strategy"],
-            result["channel"],
-            customer.get("email"),
-            customer.get("phone")
-        )
+        with st.spinner("Executing campaign via selected channel..."):
+            response = trigger_campaign(
+                customer["customer_id"],
+                result["strategy"],
+                result["channel"],
+                customer.get("email"),
+                customer.get("phone")
+            )
 
-        st.success("Campaign Executed Successfully")
+        # -----------------------------
+        # Show Execution Result
+        # -----------------------------
+        st.success("Campaign Execution Completed")
+        st.subheader("Execution Result")
         st.json(response)
+
     else:
         st.error(f"Blocked by Governance: {result.get('governance_reason')}")
