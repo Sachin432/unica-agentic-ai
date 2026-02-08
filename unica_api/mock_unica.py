@@ -1,34 +1,21 @@
 from unica_api.email_sender import send_email
+from unica_api.sms_sender import send_sms
 
-def trigger_campaign(customer_id, strategy, channel, customer_email=None):
-    # In real Unica, this would trigger journeys/campaigns
+def trigger_campaign(customer_id, strategy, channel, customer_email=None, customer_phone=None):
+    message = f"We have a {strategy} campaign for you."
 
     if channel.lower() == "email":
         if not customer_email:
             return {"status": "failed", "reason": "No email provided"}
 
-        subject = f"{strategy} Campaign for You"
-        body = f"""
-Hello,
-
-We have a special {strategy} campaign tailored for you.
-
-Thank you,
-Marketing Team
-"""
-        result = send_email(customer_email, subject, body)
-        return {
-            "status": "triggered",
-            "channel": "Email",
-            "customer_id": customer_id,
-            "email_result": result
-        }
+        subject = f"{strategy} Campaign"
+        return send_email(customer_email, subject, message)
 
     elif channel.lower() == "sms":
-        return {"status": "triggered", "channel": "SMS", "customer_id": customer_id}
+        if not customer_phone:
+            return {"status": "failed", "reason": "No phone number provided"}
 
-    elif channel.lower() == "push":
-        return {"status": "triggered", "channel": "Push", "customer_id": customer_id}
+        return send_sms(customer_phone, message)
 
     else:
-        return {"status": "failed", "reason": "Unknown channel"}
+        return {"status": "failed", "reason": "Unsupported channel"}
