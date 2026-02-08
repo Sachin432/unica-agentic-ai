@@ -22,9 +22,9 @@ def run_orchestration(llm, customer: dict) -> dict:
     strategy = strategy_result.get("strategy", "DoNothing")
 
     # -----------------------------
-    # 3. Channel Decision Agent
+    # 3. Channel Decision Agent (now uses customer signals)
     # -----------------------------
-    channel_result = channel_agent(llm, strategy)
+    channel_result = channel_agent(llm, strategy, customer)
     channel = channel_result.get("channel", "Email")
     send_time = channel_result.get("send_time", "Weekday morning")
 
