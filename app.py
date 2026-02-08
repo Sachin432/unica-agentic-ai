@@ -60,7 +60,7 @@ if st.button("Run Autonomous Campaign Decision"):
             customer["customer_id"],
             result["strategy"],
             result["channel"],
-            customer.get("email")
+            customer.get("email"),
             customer.get("phone")
         )
 
