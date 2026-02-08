@@ -1,11 +1,4 @@
 customer_id,segment,age,location,email,phone,opt_out,fatigue_score,open_rate,click_rate
-C101,Medium-Value,29,India,test1@example.com,6299442449,false,0.45,0.55,0.22
-C102,Medium-Value,35,India,test2@example.com,6299442449,false,0.50,0.48,0.20
-C103,Low-Value,42,India,test3@example.com,6299442449,false,0.65,0.40,0.18
-C104,Low-Value,51,India,test4@example.com,6299442449,false,0.75,0.30,0.12
-C105,Medium-Value,33,India,test5@example.com,6299442449,false,0.38,0.52,0.21
-C106,Low-Value,47,India,test6@example.com,6299442449,false,0.80,0.25,0.10
-C107,Medium-Value,26,India,test7@example.com,6299442449,false,0.42,0.50,0.20
-C108,Low-Value,58,India,test8@example.com,6299442449,false,0.85,0.22,0.08
-C109,Medium-Value,31,India,test9@example.com,6299442449,false,0.46,0.54,0.23
-C110,Low-Value,44,India,test10@example.com,6299442449,false,0.70,0.35,0.15
+C201,Low-Value,48,India,test1@example.com,6299442449,false,0.75,0.28,0.12
+C202,Low-Value,55,India,test2@example.com,6299442449,false,0.85,0.20,0.08
+C203,Low-Value,42,India,test3@example.com,6299442449,false,0.90,0.18,0.05
