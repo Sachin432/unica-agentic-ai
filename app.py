@@ -61,6 +61,7 @@ if st.button("Run Autonomous Campaign Decision"):
             result["strategy"],
             result["channel"],
             customer.get("email")
+            customer.get("phone")
         )
 
         st.success("Campaign Executed Successfully")
