@@ -1,1 +1,10 @@
 .\venv\Scripts\Activate
+
+-------
+
+call only
+customer_id,segment,age,location,email,phone,opt_out,fatigue_score,open_rate,click_rate
+C201,Low-Value,48,India,test1@example.com,6299442449,false,0.75,0.28,0.12
+C202,Low-Value,55,India,test2@example.com,6299442449,false,0.85,0.20,0.08
+C203,Low-Value,42,India,test3@example.com,6299442449,false,0.90,0.18,0.05
+
