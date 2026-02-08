@@ -7,3 +7,5 @@ numpy
 python-dotenv
 faiss-cpu
 requests
+twilio
+
